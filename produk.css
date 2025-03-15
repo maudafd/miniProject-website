@@ -1,0 +1,88 @@
+/* Mendefinisikan variabel CSS untuk warna, ukuran font, dan padding */
+:root {
+    --primary-color: #333; /* Warna utama untuk teks */
+    --secondary-color: pink; /* Warna sekunder untuk aksen */
+    --font-size: 16px; /* Ukuran font default */
+    --padding: 10px; /* Padding default */
+}
+
+/* Gaya untuk header */
+header {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    justify-content: space-between; /* Menyusun elemen di header dengan jarak di antara */
+    align-items: center; /* Pusatkan elemen secara vertikal */
+    padding: var(--padding) 20px; /* Padding atas-bawah menggunakan variabel, kiri-kanan 20px */
+    background-color: #ffffff; /* Warna latar belakang header */
+    border-bottom: 1px solid #ddd; /* Garis bawah header */
+}
+
+/* Gaya dasar untuk body */
+body {
+    font-family: Arial, sans-serif; /* Jenis font default */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+    display: flex; /* Menggunakan flexbox untuk layout */
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+    min-height: 100vh; /* Body mengambil tinggi penuh viewport */
+}
+
+/* Gaya untuk navigasi di sebelah kanan */
+.nav-right ul {
+    list-style: none; /* Menghilangkan bullet points dari daftar */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+    display: flex; /* Menggunakan flexbox untuk layout horizontal */
+    gap: 20px; /* Jarak antara item navigasi */
+}
+
+/* Gaya untuk setiap item navigasi */
+.nav-right ul li {
+    display: inline-block; /* Membuat item navigasi sejajar */
+}
+
+/* Gaya untuk link di navigasi, footer, dan sosial media */
+.nav-right ul li a.nav-link,
+.footer-link,
+.social-link {
+    text-decoration: none; /* Menghilangkan underline dari link */
+    color: var(--primary-color); /* Warna teks menggunakan variabel */
+    font-size: var(--font-size); /* Ukuran font menggunakan variabel */
+    transition: color 0.3s ease; /* Efek transisi warna saat hover */
+}
+
+/* Efek hover pada link */
+.nav-right ul li a.nav-link:hover,
+.footer-link:hover,
+.social-link:hover {
+    color: var(--secondary-color); /* Warna teks saat dihover menggunakan variabel */
+}
+
+/* Gaya untuk footer */
+footer {
+    background-color: #f8f8f8; /* Warna latar belakang footer */
+    padding: var(--padding) 0; /* Padding atas-bawah menggunakan variabel */
+    border-top: 1px solid #ddd; /* Garis atas footer */
+    text-align: center; /* Pusatkan teks di footer */
+}
+
+/* Gaya untuk konten footer */
+.footer-content {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    justify-content: center; /* Pusatkan konten secara horizontal */
+    gap: 40px; /* Jarak antara item footer */
+}
+
+/* Gaya untuk grid dan card dari Semantic UI */
+.ui.grid,
+.ui.vertical.menu,
+.ui.card {
+    width: 100%; /* Lebar 100% dari parent */
+    margin-top: 20px; /* Jarak atas dari grid, menu, dan card */
+}
+
+/* Gaya untuk item aktif (misalnya, item yang diklik) */
+.sort-item.active {
+    background-color: var(--secondary-color); /* Warna latar belakang menggunakan variabel */
+    color: white; /* Warna teks */
+    border-radius: 5px; /* Membuat sudut melengkung */
+}

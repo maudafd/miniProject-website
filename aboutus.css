@@ -1,0 +1,21 @@
+/* Gaya untuk about section */
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Gaya untuk foto */
+.about-image {
+    width: 200px; /* Sesuaikan ukuran lebar */
+    height: 200px; /* Sesuaikan ukuran tinggi */
+    border-radius: 50%; /* Membuat foto bulat */
+    display: block; /* Membuat gambar menjadi block element */
+    margin: 20px auto; /* Margin atas-bawah 20px, otomatis di tengah */
+    object-fit: cover; /* Memastikan gambar terisi penuh tanpa distorsi */
+}
+
+/* Gaya untuk teks rata kanan kiri */
+.justify-text {
+    text-align: justify;
+    line-height: 1.6; /* Jarak antar baris */
+}

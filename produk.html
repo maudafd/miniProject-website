@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata dasar untuk dokumen HTML -->
+    <meta charset="UTF-8"> <!-- Menentukan encoding karakter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Membuat halaman responsif -->
+    <link rel="stylesheet" href="produk.css"> <!-- Menghubungkan file CSS kustom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Menghubungkan Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> <!-- Menghubungkan Semantic UI CSS -->
+    <title>Product Page</title> <!-- Judul halaman -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <link rel="stylesheet" href="index.css">
+        <!-- Logo di sebelah kiri -->
+        <div class="logo">
+            <a href="halamanLogin.html">
+            <img src="image/logomed.png" alt="LOGO TOKO" class="ui small circular image">
+        </div>
+
+        <!-- Navigasi di sebelah kanan -->
+        <nav class="nav-right">
+            
+            <ul>
+                <!-- Item navigasi Beranda dengan ikon rumah -->
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Beranda</a></li>
+                <!-- Item navigasi Produk dengan ikon tas belanja -->
+                <li><a href="produk.html" class="nav-link"><i class="fas fa-shopping-bag"></i> Produk</a></li>
+                <li><a href="aboutus.html" class="nav-link"><i class="fas fa-circle-info"></i> About us</a></li>
+                <li><a href="halamanLogin.html" class="nav-link"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten utama -->
+    <div class="ui container">
+        <!-- Grid layout menggunakan Semantic UI -->
+        <div class="ui grid" >
+            <!-- Kolom kiri untuk filter -->
+            <div class="four wide column">
+                <!-- Menu vertikal untuk filter -->
+                <div class="ui vertical menu">
+                    <!-- Filter jenis kulit -->
+                    <div class="item">
+                        <div class="header">Jenis Kulit</div>
+                        <div class="menu">
+                            <!-- Checkbox untuk jenis kulit berminyak -->
+                            <a class="item"><div class="ui checkbox"><input type="checkbox"><label>Berminyak</label></div></a>
+                            <!-- Checkbox untuk jenis kulit kering -->
+                            <a class="item"><div class="ui checkbox"><input type="checkbox"><label>Kering</label></div></a>
+                            <!-- Checkbox untuk jenis kulit kombinasi -->
+                            <a class="item"><div class="ui checkbox"><input type="checkbox"><label>Kombinasi</label></div></a>
+                            <!-- Checkbox untuk jenis kulit normal -->
+                            <a class="item"><div class="ui checkbox"><input type="checkbox"><label>Normal</label></div></a>
+                        </div>
+
+                    </div>
+                    <!-- Filter kategori produk -->
+                    <div class="item">
+                        <div class="header">Kategori</div>
+                        <div class="menu">
+                            <!-- Checkbox untuk kategori Day Cream -->
+                            <a class="item"><div class="ui checkbox"><input type="checkbox"><label>Makeup</label></div></a>
+                            <!-- Checkbox untuk kategori Night Cream -->
+                            <a class="item"><div class="ui checkbox"><input type="checkbox"><label>Skincare</label></div></a>
+                            <!-- Checkbox untuk kategori Cleanser -->
+                            <a class="item"><div class="ui checkbox"><input type="checkbox"><label>Bodycare</label></div></a>
+                            <!-- Checkbox untuk kategori Toner -->
+                            <a class="item"><div class="ui checkbox"><input type="checkbox"><label>Haircare</label></div></a>
+                            <!-- Checkbox untuk kategori Serum -->
+                            <a class="item"><div class="ui checkbox"><input type="checkbox"><label>Tools</label></div></a>
+                            <!-- Checkbox untuk kategori Sunscreen -->
+                            <a class="item"><div class="ui checkbox"><input type="checkbox"><label>Merchandise</label></div></a>
+                            <!-- Checkbox untuk kategori Acne Care -->
+                            <a class="item"><div class="ui checkbox"><input type="checkbox"><label>Accessories</label></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Kolom kanan untuk daftar produk -->
+            <div class="twelve wide column">
+                <!-- Menu untuk sorting dan pencarian -->
+                <div class="ui menu">
+                    <!-- Item menu untuk sorting A-Z -->
+                    <div class="item sort-item" data-target="a-z">Urutkan A-Z</div>
+                    <!-- Item menu untuk sorting Populer -->
+                    <div class="item sort-item" data-target="populer">Populer</div>
+                    <!-- Item menu untuk sorting Terbaru -->
+                    <div class="item sort-item" data-target="terbaru">Terbaru</div>
+                    <!-- Item menu untuk sorting Diskon -->
+                    <div class="item sort-item" data-target="diskon">Diskon</div>
+                    <!-- Input pencarian di sebelah kanan -->
+                    <div class="right item">
+                        <div class="ui transparent icon input">
+                            <input type="text" placeholder="Pencarian item..."> <!-- Input teks untuk pencarian -->
+                            <i class="search icon"></i> <!-- Ikon pencarian -->
+                        </div>
+                    </div>
+                </div>
+                <script src="produk.js"></script> <!-- Pastikan path JavaScript benar -->
+
+                <!-- Daftar produk -->
+                <div class="ui three column grid">
+                    <!-- Produk 1 -->
+                    <div class="column">
+                        <div class="ui card">
+                            <div class="image">
+                                <img src="image/cushion.png" height="100px"> <!-- Gambar produk -->
+                            </div>
+                            <div class="content">
+                                <a class="header">Lunesse Guardian of Complexion Cushion</a> <!-- Nama produk -->
+                                <div class="meta">
+                                    <span class="date">Rp 188.000</span> <!-- Harga produk -->
+                                </div>
+                                <div class="description">
+                                    Deskripsi singkat produk 1. <!-- Deskripsi produk -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produk 2 -->
+                    <div class="column">
+                        <div class="ui card">
+                            <div class="image">
+                                <img src="image/anuaserum.png" height="100px"> <!-- Gambar placeholder -->
+                            </div>
+                            <div class="content">
+                                <a class="header">iUNIK Rose Galactomyces Serum</a> <!-- Nama produk -->
+                                <div class="meta">
+                                    <span class="date">Rp 150.000</span> <!-- Harga produk -->
+                                </div>
+                                <div class="description">
+                                    Deskripsi singkat produk 2. <!-- Deskripsi produk -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produk 3 -->
+                    <div class="column">
+                        <div class="ui card">
+                            <div class="image">
+                                <img src="image/lip.png"> <!-- Gambar placeholder -->
+                            </div>
+                            <div class="content">
+                                <a class="header">
+                                    DIOR TRAVEL EXCL DUO ADDICT LIP GLOW</a> <!-- Nama produk -->
+                                <div class="meta">
+                                    <span class="date">Rp 200.000</span> <!-- Harga produk -->
+                                </div>
+                                <div class="description">
+                                    Deskripsi singkat produk 3. <!-- Deskripsi produk -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

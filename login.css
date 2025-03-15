@@ -1,0 +1,61 @@
+/* Gaya dasar untuk body */
+body {
+    background-color: #faeaea; /* Warna latar belakang body */
+    font-family: Arial, sans-serif; /* Jenis font yang digunakan */
+}
+
+/* Gaya untuk container login */
+.login-container {
+    height: 100vh; /* Tinggi container login sama dengan tinggi viewport */
+    margin: 0 !important; /* Menghilangkan margin default */
+}
+
+/* Gaya untuk kolom di dalam container login */
+.login-container .column {
+    max-width: 450px; /* Lebar maksimum kolom */
+    padding: 20px; /* Padding di dalam kolom */
+    background-color: #fff; /* Warna latar belakang kolom */
+    border-radius: 10px; /* Membuat sudut kolom melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada kolom */
+}
+
+/* Gaya untuk header di dalam container login */
+.login-container .ui.header {
+    margin-bottom: 20px; /* Jarak bawah dari header */
+}
+
+/* Gaya untuk field di dalam form login */
+.login-container .ui.form .field {
+    margin-bottom: 15px; /* Jarak bawah antara field */
+}
+
+/* Gaya untuk input di dalam field */
+.login-container .ui.form .field input {
+    width: 100%; /* Lebar input 100% dari parent */
+    padding: 10px; /* Padding di dalam input */
+    border: 1px solid #ddd; /* Border input */
+    border-radius: 5px; /* Membuat sudut input melengkung */
+}
+
+/* Gaya untuk tombol di dalam form */
+.login-container .ui.form .field .ui.button {
+    width: 100%; /* Lebar tombol 100% dari parent */
+    margin-top: 10px; /* Jarak atas dari tombol */
+}
+
+/* Gaya untuk pesan di bawah form (misalnya, "Belum punya akun?") */
+.login-container .ui.message {
+    margin-top: 20px; /* Jarak atas dari pesan */
+    text-align: center; /* Teks di tengah */
+}
+
+/* Gaya untuk link di dalam pesan */
+.login-container .ui.message a {
+    color: #2185d0; /* Warna teks link */
+    text-decoration: none; /* Menghilangkan underline pada link */
+}
+
+/* Efek hover pada link */
+.login-container .ui.message a:hover {
+    text-decoration: underline; /* Menambahkan underline saat dihover */
+}

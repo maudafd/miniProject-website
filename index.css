@@ -1,0 +1,149 @@
+/* Gaya untuk header */
+header {
+    display: flex; /* Menggunakan flexbox untuk tata letak header */
+    justify-content: space-between; /* Menempatkan elemen header di ujung-ujung */
+    align-items: center; /* Menyelaraskan elemen header secara vertikal di tengah */
+    padding: 10px 20px; /* Padding atas-bawah 10px, kiri-kanan 20px */
+    background-color: #ffffff; /* Latar belakang header putih */
+    border-bottom: 1px solid #ddd; /* Border bawah header tipis */
+}
+
+/* Gaya untuk logo */
+.logo img {
+    height: 100px; /* Tinggi gambar logo 100px */
+}
+
+/* Gaya untuk navigasi di sebelah kanan */
+.nav-right ul {
+    list-style: none; /* Menghilangkan penanda daftar */
+    margin: 0; /* Menghapus margin */
+    padding: 0; /* Menghapus padding */
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    gap: 20px; /* Jarak antar item 20px */
+}
+
+/* Gaya untuk setiap item navigasi */
+.nav-right ul li {
+    display: inline-block; /* Menata item secara inline */
+}
+
+/* Gaya untuk link navigasi */
+.nav-right ul li a.nav-link {
+    text-decoration: none; /* Menghilangkan garis bawah link */
+    color: #333; /* Warna teks link abu-abu gelap */
+    font-size: 16px; /* Ukuran font link 16px */
+    display: flex; /* Menggunakan flexbox untuk tata letak link */
+    align-items: center; /* Menyelaraskan item link secara vertikal */
+    gap: 8px; /* Jarak antara ikon dan teks 8px */
+    padding: 10px; /* Padding link 10px */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transisi warna dan latar belakang */
+}
+/* Gaya untuk ikon */
+.nav-right ul li a.nav-link i {
+    font-size: 16px; /* Ukuran ikon 16px */
+}
+
+/* Efek hover dan aktif pada link navigasi */
+.nav-right ul li a.nav-link:hover,
+.nav-right ul li a.nav-link.active {
+    color: pink !important; /* Warna teks link saat hover/aktif pink */
+}
+
+/* untuk halaman beranda*/
+/* Gaya dasar untuk body */
+body {
+    font-family: Arial, sans-serif; /* Jenis huruf body Arial atau sans-serif */
+    margin: 0; /* Menghapus margin body */
+    padding: 0; /* Menghapus padding body */
+    display: flex; /* Menggunakan flexbox untuk tata letak body */
+    flex-direction: column; /* Menata elemen body dalam kolom */
+    min-height: 100vh; /* Tinggi minimal body 100% tinggi layar */
+    background-color: #faeaea; /* Latar belakang body merah muda pucat */
+}
+
+/* Gaya untuk navigasi di sebelah kanan */
+.nav-right ul {
+    list-style: none; /* Menghilangkan penanda daftar */
+    margin: 0; /* Menghapus margin */
+    padding: 0; /* Menghapus padding */
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    gap: 20px; /* Jarak antar item 20px */
+}
+
+/* Gaya untuk setiap item navigasi */
+.nav-right ul li {
+    display: inline-block; /* Menata item secara inline */
+}
+
+/* Gaya untuk link navigasi */
+.nav-right ul li a.nav-link {
+    text-decoration: none; /* Menghilangkan garis bawah link */
+    color: #333; /* Warna teks link abu-abu gelap */
+    font-size: 16px; /* Ukuran font link 16px */
+    display: block; /* Menata link sebagai blok */
+    padding: 10px 0; /* Padding link 10px atas-bawah */
+    position: relative; /* Posisi relatif untuk link */
+}
+
+/* Gaya untuk konten utama */
+main {
+    flex: 1; /* Mengisi sisa ruang body */
+    padding: 20px; /* Padding konten 20px */
+    text-align: center; /* Teks rata tengah */
+}
+
+/* Gaya untuk hero section */
+.hero h1 {
+    font-size: 2.5rem; /* Ukuran font judul hero 2.5rem */
+    color: #333; /* Warna teks judul hero abu-abu gelap */
+    margin-bottom: 20px; /* Margin bawah judul hero 20px */
+}
+
+.hero .promo {
+    font-size: 1.5rem; /* Ukuran font promo hero 1.5rem */
+    color: #e91e63; /* Warna teks promo hero merah muda */
+    margin-bottom: 10px; /* Margin bawah promo hero 10px */
+}
+
+.hero .periode {
+    font-size: 1.2rem; /* Ukuran font periode hero 1.2rem */
+    color: #666; /* Warna teks periode hero abu-abu */
+}
+
+/* Gaya untuk contact section */
+.contact {
+    margin-top: 40px; /* Margin atas contact section 40px */
+}
+
+.contact h2 {
+    font-size: 1.8rem; /* Ukuran font judul contact 1.8rem */
+    color: #333; /* Warna teks judul contact abu-abu gelap */
+    margin-bottom: 20px; /* Margin bawah judul contact 20px */
+}
+
+.social-links {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: center; /* Menempatkan elemen di tengah */
+    gap: 20px; /* Jarak antar item 20px */
+    margin-bottom: 20px; /* Margin bawah social links 20px */
+}
+
+.social-links .social-link {
+    text-decoration: none; /* Menghilangkan garis bawah link */
+    color: #333; /* Warna teks link abu-abu gelap */
+    font-size: 1.2rem; /* Ukuran font link 1.2rem */
+    transition: color 0.3s ease; /* Transisi warna link */
+}
+
+.social-links .social-link:hover {
+    color: #e91e63; /* Warna teks link saat hover merah muda */
+}
+
+.email-info {
+    font-size: 1rem; /* Ukuran font email info 1rem */
+    color: #666; /* Warna teks email info abu-abu */
+}
+
+.email-info strong {
+    color: #333; /* Warna teks strong email info abu-abu gelap */
+}
